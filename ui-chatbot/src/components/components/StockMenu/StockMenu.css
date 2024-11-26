@@ -1,0 +1,19 @@
+.toMainMenu {
+    width: 20%;
+    background: #ecf5fd;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.toMainMenu:hover {
+    border: 1px #001eff solid;
+}
+
+
+
+
+ 
+ 
+
+  

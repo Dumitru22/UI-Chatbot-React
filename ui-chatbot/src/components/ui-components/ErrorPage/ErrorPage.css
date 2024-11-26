@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    text-align: center;
+}
+
+.error{
+    font-size: 28px;
+    color: red;
+}

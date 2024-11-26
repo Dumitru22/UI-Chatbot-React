@@ -1,27 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/ui-components/HeaderUi/HeaderUi';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomeMenu from './components/components/HomeMenu/HomeMenu';
+import StockMenu from './components/components/StockMenu/StockMenu';
+import StockValue from './components/components/StockValue/StockValue';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reactsss
-        </a>
-        <div>asas</div>
-      </header>
+      <Header>
+      </Header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomeMenu></HomeMenu>} />
+          <Route path="/stock" element={<StockMenu></StockMenu>} />
+          <Route path="/stockValue" element={<StockValue></StockValue>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
